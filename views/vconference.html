@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    max-width: 100%;
+    margin: 10px;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+    </style>
+    <title>WebRTC Video Call</title>
+</head>
+<style>
+    #call-container{
+        border: 10px solid ;
+        border-radius: 5%;
+    }
+</style>
+<body>
+    <div id="call-container">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+        <div id="controls">
+            <button id="startButton">Start Call</button>
+            <button id="endButton">End Call</button>
+        </div>
+    </div>
+
+    <script src="vc.js"></script>
+</body>
+</html>
+
+
+
